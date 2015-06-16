@@ -1,3 +1,7 @@
+/*
+ * Create a new popup  and define its controls dynamically 
+ */
+
 /// <summary>
 /// The main form
 /// </summary>
