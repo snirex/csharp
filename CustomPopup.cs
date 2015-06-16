@@ -21,8 +21,8 @@ public partial class Form1 : Form
    /// Create a new popup with pre-run configured controls
    /// </summary>
    /// <param name="txtboxesToCreate">Textboxes to create in the new form.
-   /// <para>for example: </para><para>   &lt;txtsnir,0,0,15,15&gt;,</para><para>  
-   /// &lt;txt2,0,0,15,40&gt;,</para><para>   &lt;txt3,0,0,15,65&gt;,</para>
+   /// <para>for example: </para><para>   &lt;txtsnir,0,0,15,15&gt;,
+   /// &lt;txtA,0,0,15,40&gt;,</para><para>   &lt;txtB,0,0,15,65&gt;,</para>
    /// </param>
    private void CreatePopup(string textboxes_to_create)
    {
