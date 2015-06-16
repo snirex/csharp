@@ -14,6 +14,18 @@ public partial class Form1 : Form
 
    private void bOpenPopup_Click(object sender, EventArgs e)
    {
+   	CreatePopup("<txt_snir,0,0,15,15>,<txt_elgabsi,0,0,15,40>");
+   }
+   
+   /// <summary>
+   /// Create a new popup with pre-run configured controls
+   /// </summary>
+   /// <param name="txtboxesToCreate">Textboxes to create in the new form.
+   /// <para>for example: </para><para>   &lt;txtsnir,0,0,15,15&gt;,</para><para>  
+   /// &lt;txt2,0,0,15,40&gt;,</para><para>   &lt;txt3,0,0,15,65&gt;,</para>
+   /// </param>
+   private void CreatePopup(string textboxes_to_create)
+   {
       CustomPopup _custompopup = new CustomPopup()
       {
          xWidth = 300, //(int)numericUpDown1.Value
@@ -21,7 +33,7 @@ public partial class Form1 : Form
          Title = "my popop title",
          
          //Create textboxes
-         Textboxes = new string[] { "<txt_snir,0,0,15,15>,<txt_elgabsi,0,0,15,40>" },
+         Textboxes = new string[] { textboxes_to_create },
       };
 							
       // Create (add) ok, cancel buttons to the new form
