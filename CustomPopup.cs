@@ -50,7 +50,7 @@ public partial class Form1 : Form
 
 
 /// <summary>
-/// The form to configure and popup
+/// The new form to configure and popup
 /// </summary>
 public partial class CustomPopup : Form
 {
